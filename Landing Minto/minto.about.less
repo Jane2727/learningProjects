@@ -1,0 +1,115 @@
+@main-content: 870px;
+
+@main-color: #9374b5;
+@light-color: #ffffff;
+@dark-color: #4b4a4a;
+@border-gray: #d9dada;
+
+
+
+
+ .main-block {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 30px;
+    }
+
+    .main-block-content {
+        display: flex;
+        width: @main-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+
+        .main-block-picture {
+            display: flex;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 190px;
+            height: 230px;
+            border-radius: 14px;
+            border: 10px solid @border-gray;
+            flex-shrink: 0;
+       
+        }
+            .left-picture1 {
+                background-image: url('img/about1.jpg'); 
+            }
+
+            .right-picture2 {
+                background-image: url('img/about2.jpg');
+            }
+
+            .left-picture3 {
+                background-image: url('img/about3.jpg');
+            }
+
+            .right-picture4 {
+                background-image: url('img/about4.jpg');
+            }
+
+        .main-block-description {
+            display: flex;
+            flex-direction: column;
+            max-width: 550px;
+        }
+
+            .main-block-topic {
+                display: flex;
+                font-family: Helvetica, sans-serif;
+                font-size: 30px;
+            }
+
+            .main-block-text {
+                display: flex;
+                flex-wrap: wrap;
+                font-family: Helvetica, sans-serif;
+                padding-top: 14px;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+.img-responsive-slide {
+    width: 100%;
+    height: 400px !important;
+    }
+
+.text-block {
+    display: flex;
+    max-width: 100%;
+    }
+
+.text-block-content {
+    display: block;
+    width: @main-content;
+    max-width: @main-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-top: 1px solid @border-gray;
+    border-bottom: 1px solid @border-gray;
+    padding: 14px 54px;
+
+    .text-cursive-main {
+        font-size: 20px;
+        font-family: Helvetica, sans-serif;
+        color: @main-color;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .text-cursive-black {
+        font-size: 20px;
+        font-family: Helvetica, sans-serif;
+        color: @dark-color;
+        font-style: italic;
+    }
+ }
+.modal-info {
+    display: flex;
+    max-width: @main-content;
+    margin: auto;
+}
