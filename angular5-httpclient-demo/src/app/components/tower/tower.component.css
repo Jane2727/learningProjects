@@ -1,0 +1,28 @@
+  .tower {
+    display: inline-block;
+    width: 165px;
+  }
+  .level-title {
+    text-align: center;
+    padding: 5px;
+  }
+  .level-value {
+    text-align: center;
+    padding: 5px;
+    font-size: 26px;
+  }
+  .img {
+    height: 470px;
+    width: 155px;
+  }
+  .status-line {
+    width: 68px;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: #22b04a;
+  }
+
+  .overWeight, .overLevel {
+    background: red;
+  }

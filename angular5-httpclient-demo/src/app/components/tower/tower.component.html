@@ -1,0 +1,41 @@
+<div class="tower" >
+    <div class="level-title"><span [textContent]="tower.level.title"></span></div>
+    <div class="level-value"><span [textContent]="tower.level.value"></span><span>%</span></div>
+    <div class="status-line" [class.overLevel]="overLevel"></div>
+    <div class="img">
+        <svg height="469" width="154">
+            <linearGradient id="linear-gradient">
+              <stop offset="0%" stop-color="#7B8383"/>
+              <stop offset="30%" stop-color="#C5CACA"/>
+              <stop offset="50%" stop-color="#A9B0B0"/>
+              <stop offset="100%" stop-color="#7B8383"/>
+            </linearGradient>
+
+            <linearGradient id="linear-gradient-green">
+                <stop stop-opacity="0.6" stop-color="#22b04a"  offset="0"/>
+              </linearGradient>
+
+            <rect  width="55" height="4" x="50" y="0" rx="2" fill="url(#linear-gradient)" stroke="black"></rect>
+            <rect x="0" y="5" width="152" height="4.3" rx="2" fill="#CBCBCB" stroke="black"></rect>
+            <rect x="8" y="11" width="137" height="91.9" rx="2" fill="url(#linear-gradient)" stroke="black"></rect>
+
+            <rect x="0" y="104" width="152" height="4.3" rx="2" fill="#CBCBCB" stroke="black"></rect>
+            <rect x="8" y="110" width="137" height="91.9" rx="2" fill="url(#linear-gradient)" stroke="black"></rect>
+
+            <rect x="0" y="203" width="152" height="4.3" rx="2" fill="#CBCBCB" stroke="black"></rect>
+            <rect x="8" y="209" width="137" height="91.9" rx="2" fill="url(#linear-gradient)" stroke="black"></rect>
+
+            <rect x="0" y="302" width="152" height="4.3" rx="2" fill="#CBCBCB" stroke="black"></rect>
+            <rect x="8" y="308" width="137" height="91.9" rx="2" fill="url(#linear-gradient)" stroke="black"></rect>
+
+            <rect x="22"  [attr.y]="greenY" width="110" [attr.height]="greenHeight" rx="2" fill="url(#linear-gradient-green)"></rect>
+
+            <rect x="0" y="401" width="152" height="4.3" rx="2" fill="#CBCBCB" stroke="black"></rect>
+            <polygon points="8,407 146,407 81,469 73,469" fill="url(#linear-gradient)" stroke="black"></polygon>
+        </svg>
+
+    </div>
+    <div class="level-title"><span [textContent]="tower.weight.title"></span></div>
+    <div class="level-value"><span [textContent]="tower.weight.value"></span></div>
+    <div class="status-line" [class.overWeight]="overWeight"></div>
+</div>
